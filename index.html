@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóvel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="header-left-container">
+                <div class="logo">
+                    <img src="./imgs/logo.png" alt="Logo" />
+                </div>
+                <nav class="header-nav-left">
+                    <a href="#">Condomínios</a>
+                    <a href="#">Fórum</a>
+                    <a href="#">Guia</a>
+                    <a href="#">Artigos</a>
+                    <a href="#">Ferramentas</a>
+                </nav>
+            </div>
+            <div class="menu-icon">
+                <img class="menu-icon" src="../testeFront/imgs/menuHamburguer.png" alt="Imagem de 3 linhas, menu" id="menu-toggle">
+            </div>
+            <nav class="header-nav-right" id="menu-responsivo">
+                <ul>
+                    <li>
+                        <a href="#">Cotar Imóvel</a>
+                        <a href="#">Planos</a>
+                        <a href="#">Entrar</a>
+                        <a href="#" class="btn-cadastrar">CADASTRE-SE</a> 
+                    </li>  
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="sections1">
+                <section class="corretoresMain">
+                    <span class="numero">1</span>
+                    <div class="pessoa1">
+                        <div class="img-container">
+                            <img src="./imgs/pessoa1.webp" alt="Pessoa 1">
+                        </div>
+                        <div class="infos">
+                            <h2>Nome Corretora</h2>
+                            <p>3.000 pontos</p>
+                            <button class="buttonTel1">ver telefone</button>
+                            <div class="telefone1">+55 (11) 1234-5678</div>
+                        </div>
+                    </div>
+                    <div class="pessoa2">
+                        <div class="img-container">
+                            <img src="./imgs/pessoa2.jpeg" alt="Pessoa 2">
+                        </div>
+                        <div class="infos">
+                            <h2>Nome Corretor</h2>
+                            <p>1.260 pontos</p>
+                            <button class="buttonTel2">ver telefone</button>
+                            <div class="telefone2">+55 (11) 1312-2132</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mensagemMain">
+                    <span class="numero">2</span>
+                    <h2>Mande uma mensagem:</h2>
+                    <div class="conteudo">
+                        <input type="text" class="inputCPF" maxlength="14" placeholder="Digite seu CPF">
+                        <input type="text" class="inputTel" maxlength="15" placeholder="Digite seu telefone">
+                        <textarea class="textAreaAssunto" rows="4" placeholder="Digite o assunto"></textarea>
+                    </div>
+                    <button class="btnEnviarMsg">Enviar Mensagem</button>
+                </section>
+                <section class="regraDe3Main">
+                    <span class="numero">3</span>
+                    <h2>Regra de 3</h2>
+                    <div class="regraDe3">
+                            <div class="input-pair">
+                                <input type="number" class="valor1" placeholder="Valor 1">
+                                <div class="linha"></div>
+                                <input type="number" class="valor2" placeholder="Valor 2">
+                            </div>
+                            <div class="input-pair">
+                                <input type="number" class="valor3" placeholder="Valor 3">
+                                <div class="linha"></div>
+                                <input type="number" class="resultado" readonly>
+                            </div>
+                    </div>
+                    <button class="buttonCalcular">Calcular</button>
+                </section>
+            </div>
+            <div class="sections2">
+                <section class="abrirImagemMain">
+                    <span class="numero">4</span>
+                    <div class="conteudo">
+                        <div class="abrirImagem">
+                            <img src="./imgs/casa.webp" alt="Casa">
+                        </div>
+                        <button id="btnAbrirImg">ABRIR IMAGEM NO MODAL</button>
+                    </div>
+                </section>
+                <div id="imageModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="linha"></div>
+                        <img src="./imgs/casa.webp" alt="Casa">
+                    </div>
+                </div>
+                <section class="downloadImagemMain">
+                    <span class="numero">5</span>
+                    <div class="">
+                        <div class="imagemDowload">
+                            <img src="./imgs/casa.webp" alt="Casa">
+                        </div>
+                        <button class="downloadButton">Download</button>
+                    </div>
+                </section>
+                <section class="zoomImagemMain">
+                    <span class="numero">6</span>
+                    <div class="zoomImagem">
+                        <img src="./imgs/casa.webp" alt="Casa">
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <nav class="footer-left">
+                <a href="#">Termos</a>
+                <a href="#">Contatos</a>
+                <a href="#">Sobre</a>
+            </nav>
+            <div class="footer-right">
+                <div>
+                    © Copyright 2022. Todos os direitos reservados.
+                </div>
+                <img src="./imgs/logo.png" alt="Logo" />
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

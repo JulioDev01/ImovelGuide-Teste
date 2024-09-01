@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 6px 60px;
+    background-color: #1B2653;
+}
+
+header img{
+    height: 70px;
+}
+
+.header-left-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.header-nav-left {
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav-left a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    transition: text-decoration 0.3s;
+}
+
+.header-nav-left a:hover {
+    text-decoration: underline;
+}
+
+.header-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-nav-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    transition: text-decoration 0.3s;
+    padding-right: 20px;
+}
+
+.header-nav-right a:hover {
+    text-decoration: underline;
+}
+
+.btn-cadastrar {
+    background-color: #1B2653;
+    border: solid 2px white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .menu-icon{
+    height: 36px;
+    display: none;
+    position: absolute;
+    right: 30px;
+}
+
+
+
+
+
+
+main section {
+    background-color: #ffffff;
+    padding: 0px;
+    border-radius: 8px;
+    border: solid 1px rgb(105, 105, 105);
+    width: 33%;
+    height: 362px;
+    margin: 40px 80px;
+    flex-wrap: wrap;
+}
+
+.sections1,
+.sections2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.sections1{
+    margin-top: 60px;
+}
+.sections2{
+    margin-bottom: 80px;
+}
+
+.numero {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+
+
+
+.pessoa1, .pessoa2 {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 0px; 
+    align-items: center;
+}
+
+.pessoa1 .infos{
+    margin-top: -20px;
+}
+
+.pessoa1 h2, .pessoa2 h2{
+    font-size: 22px;
+    color:#1B2653;
+}
+
+.pessoa1 p, .pessoa2 p{
+    color:#1B2653;
+    margin: 6px 0px;
+}
+
+.pessoa1 button, .pessoa2 button{
+    color: #FE6613;
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+
+.corretoresMain img{
+    width: 166px;
+    height: 166px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: solid 1px rgb(105, 105, 105);
+    margin: 0px 10px;
+}
+
+
+.pessoa1 img{
+    margin-top: -14px;
+    margin-bottom: 6px;
+}
+
+.telefone1, .telefone2{
+    display: none;
+    color: #1B2653;
+}
+
+
+
+
+.mensagemMain h2{
+    color: #1B2653;
+    font-size: 30px;
+    font-weight: 440;
+    margin-left: 42px;
+    margin-bottom: 20px;
+}
+
+.mensagemMain .conteudo input, textarea{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    width: 80%;
+    border: solid 1px rgb(105, 105, 105);
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 16px;
+    color:rgb(105, 105, 105);
+}
+
+
+.mensagemMain button{
+    padding: 7px 20px;
+    margin-left: 42px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FE6613;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: background-color .3s;
+}
+
+.mensagemMain button:hover{
+    background-color: #ff5900;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.regraDe3Main h2{
+    color: #1B2653;
+    font-size: 30px;
+    font-weight: 440;
+    margin-left: 42px;
+    margin-bottom: 20px;
+}
+
+.regraDe3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 40px 0px 40px;
+}
+
+.regraDe3 input{
+    border-radius: 5px;
+    border: solid 1px rgb(105, 105, 105);
+    padding: 8px 10px;
+    font-size: 18px;
+    width: 40%;
+}
+
+.input-pair {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    position: relative; 
+}
+
+.input-pair .linha {
+    height: 1px;
+    width: 40px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+.input-pair .resultado{
+    border: solid 2px #FE6613;
+}
+
+.regraDe3Main button{
+    padding: 6px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FE6613;
+    color: white;
+    font-size: 20px;
+    margin: 70px 40px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.regraDe3Main button:hover{
+    background-color: #ff5900;
+}
+
+
+
+
+
+
+.sections2 img{
+    width: 100%;
+    height: 360px;
+    margin: 0px;
+    border-radius: 8px;
+    margin-top: -24px;
+}
+
+
+
+
+
+.abrirImagemMain button{
+    width: 100%;
+    height: 42px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FE6613;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: background-color .3s;
+}
+
+.abrirImagemMain button:hover{
+    background-color: #ff5900;
+    cursor: pointer;
+}
+
+
+
+
+.modal {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 112%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    max-width: 70%;
+    max-height: 70%;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;  
+    flex-direction: column;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color:#FE6613;
+    font-size: 40px;
+    font-weight: 1000;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.linha {
+    border: 1px solid gray;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.modal-content img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+    padding: 0px 20px 40px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.downloadImagemMain button{
+    width: 60%;
+    height: 42px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FE6613;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: background-color .3s;
+}
+
+.downloadImagemMain button:hover{
+    background-color: #ff5900;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.zoomImagem {
+    overflow: hidden;
+}
+
+.zoomImagem img {
+    object-fit: cover;
+    animation: zoomInOut 3s ease-in-out forwards;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+footer img{
+    height: 70px;
+    margin-left: 50px;
+}
+
+.footer-left {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-left a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-left a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff; 
+    font-size: 16px;
+}
+
+
+
+
+@media screen and (max-width: 1900px) {
+    .modal {
+        width: 100%;
+        height: 112%;
+    }
+
+    
+    main section {
+        width: 33%;
+        margin: 40px 40px;
+    }
+
+    .mensagemMain .conteudo input, textarea{
+        width: 84%;
+    }
+
+    .regraDe3Main button{
+        margin: 40px 40px;
+
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+    main{
+        margin: 0px 20px;
+    }
+
+    main section {
+        width: 33%;
+        margin: 40px 20px;
+    }
+
+    .mensagemMain h2{
+        font-size: 26px;
+        margin-left: 30px;
+    }
+
+    .mensagemMain button{
+        margin-left: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .modal {
+        width: 100%;
+        height: 192%;
+    }
+
+    #menu-responsivo {
+        display: none;
+        position: absolute;
+        top: 90px; 
+        right: 20px;
+        width: 230px;
+        height: 200px;
+        background-color:#1B2653;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        padding: 0px 10px;
+    }
+
+    #menu-responsivo ul {
+        list-style-type: none;
+        text-align: center;
+        flex-direction: column;
+        
+    }
+
+    #menu-responsivo ul li a {
+        display: block;
+        padding: 12px 0px;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+
+
+    .header-nav-left{
+        display: none;
+    }
+
+
+    header .menu-icon{
+        display: block;
+    }
+
+    main{
+        margin: 0px 80px;
+    }
+
+    .sections1, .sections2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .sections1 section,
+    .sections2 section {
+        width: calc(46% - 30px);
+        margin-bottom: 20px;
+    }
+
+    .footer-left {
+        display: none;
+    }
+
+    footer{
+        padding: 40px 80px;
+    }
+
+    footer img{
+        position: absolute;
+        right: 40px;
+    }
+
+    .footer-right {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1020px){
+    main{
+        margin: 0px 20px;
+    }
+
+    .sections1 section,
+    .sections2 section {
+        width: calc(45% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 850px){
+
+    .modal {
+        width: 100%;
+        height: 285%;
+    }
+
+    main section{
+        display: flex;
+        flex-direction: column; 
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sections1 section,
+    .sections2 section {
+        width: 60%;
+        margin-bottom: 80px;
+    }
+
+    .regraDe3Main button{
+        width: 40%;
+    }
+
+    .mensagemMain button{
+        width: 85%;
+    }
+
+    .mensagemMain .conteudo input, textarea{
+        width: 86%;
+    }
+
+    .downloadImagemMain button{
+        width: 200px;
+    }
+
+    .sections2 img{
+        margin-top: 0px;
+    }
+
+    .downloadImagemMain .divButtobDownload{
+        margin: 10px;
+        text-align: center;
+    }
+    
+}
+
+
+@media screen and (max-width: 650px){
+    .sections1 section,
+    .sections2 section {
+        width: 80%;
+        margin-bottom: 80px;
+    }
+
+    footer{
+        padding: 40px 40px;
+    }
+
+
+    .footer-right {
+        font-size: 18px;
+    }
+}
